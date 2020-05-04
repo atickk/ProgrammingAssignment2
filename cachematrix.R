@@ -6,8 +6,8 @@
 makeCacheMatrix <- function(x = matrix()) { ## define the argument with default mode of "matrix"
   inv <- NULL                               ## initialise inv as NULL to hold value of matrix inverse
   set <- function(y) {                      ## define the set function to assign new
-    x <<- y                                 ## value of matrix in parent environment
-    i <<- NULL                              ## if there is a new matrix, reset inv to NULL
+    x <<- y                                 ## value of matrix to be assigned in parent environment
+    i <<- NUL                              ## if there is a new matrix, reset inv to NULL
   }
   get <- function() x                       ## define the get function and return the value of matrix argument
   setinverse <- function(inverse) i <<- inverse ## assigns value of inv in parent environment
